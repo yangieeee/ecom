@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>SecretScents</h1>
+    </header>
+    <div class="welcome">
+        <h2>Welcome to SecretScents!</h2>
+        <p>Your favorite fragrances are just a click away.</p>
+    </div>
+
+    <h2>Product Listings</h2>
+    <div class="product-list" id="product-list"></div>
+    
+
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <h3>Total Price: $<span id="total-price">0</span></h3>
+        <button class="remove-all-button" id="remove-all-button" onclick="removeAllFromCart()" style="display: none;">Remove All</button>
+        <button class="checkout-button" id="checkout-button" onclick="checkout()">Checkout</button>
+        <div id="checkout-message" class="message">Checkout successfully!</div>
+    </div>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modal-image" src="" alt="Full view" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
